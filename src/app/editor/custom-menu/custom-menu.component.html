@@ -1,0 +1,16 @@
+<div class="NgxEditor__Seperator"></div>
+<div class="NgxEditorFlex">
+  <div
+    class="NgxEditor__MenuItem NgxEditor__MenuItem--Text"
+    (mousedown)="onClick($event, 'sup')"
+    [ngClass]="{'NgxEditor__MenuItem--Active': supIsActive, 'NgxEditor--Disabled': supIsDisabled}">
+    X<sup>x</sup>
+  </div>
+
+  <div
+    class="NgxEditor__MenuItem NgxEditor__MenuItem--Text"
+    (mousedown)="onClick($event, 'sub')"
+    [ngClass]="{'NgxEditor__MenuItem--Active': subIsActive, 'NgxEditor--Disabled': subIsDisabled}">
+    X<sub>x</sub>
+  </div>
+</div>
